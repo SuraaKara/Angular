@@ -1,0 +1,167 @@
+.btn{
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+.card{
+  width: 340px;
+  height: 450px;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transform: scale(1);
+  transition: 0.8s;
+}
+.card:hover{
+  box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+  transform: scale(1.05);
+}
+.card .product-img{
+  width: 100%;
+  height: 360px;
+  position: relative;
+  background-color: rgb(238,238,238);
+}
+.card .product-img img{
+  position: absolute;
+  width: 320px;
+  height: auto;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  filter: drop-shadow(0px 0px 5px rgba(0,0,0,.8));
+}
+.card:hover .product-img img{
+  transform: translate(-50%, -50%) rotate(15deg);
+  filter: drop-shadow(0px 0px 5px rgba(0,0,0,.5));
+  transition-delay: .1s;
+  width: 400px;
+}
+.add-to-cart{
+  position: absolute;
+  width: 340px;
+  height: 240px;
+  background-color: rgba(204, 18, 37,.7);
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-240px);
+  transition: all .3s ease-in-out;
+}
+.card:hover .add-to-cart{
+  transform: translateY(0px);
+  transition: all .3s ease-in-out;
+}
+.add-to-card-btn{
+  padding: 10px 16px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border-style: none;
+  border:2px solid #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+.card:hover .add-to-card-btn{
+  transform: scale(1.1);
+  transition-delay: .3s;
+}
+.card:hover .add-to-card-btn:hover{
+  transform: scale(1);
+  transition-delay: 0s;
+  cursor: pointer;
+}
+.card-footer{
+  padding: 20px;
+  display: flex;
+  height: 210px;
+  width: 100%;
+  position: absolute;
+  bottom: -120px;
+  z-index: 9;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  transition: all .3s;
+}
+.card:hover .card-footer{
+  bottom: 0px;
+  transition: all .3s;
+}
+.title{
+  flex-basis: 80%;
+  text-align: start;
+  height: 60px;
+}
+.title h3{
+  padding: 5px 0px;
+  margin: 0px;
+}
+.title span{
+  color: rgb(145, 145, 145);
+}
+.price{
+  flex-basis: 20%;
+  text-align: end;
+  color: rgb(204, 18, 37);
+  font-weight: bold;
+  font-size: 20px;
+  height: 60px;
+}
+.product-options{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  align-self: baseline;
+  margin-top: 20px;
+}
+.sizes{
+  width: 100%;
+}
+.sizes strong{
+  width: 100%;
+  display: block;
+}
+.sizes span{
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+}
+
+.colors{
+  display: flex;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+.colors strong{
+  width: 100%;
+  display: block;
+}
+.colors span{
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 5px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+}
+.colors .blue{
+  background-color: rgb(46, 123, 191);
+}
+.colors .red{
+  background-color: rgb(204, 18, 37);
+}
+.colors .white{
+  background-color: #ffffff;
+}
+.colors .green{
+  background-color: rgb(38, 168, 38);
+}
+.colors span:hover{
+  transform: scale(.8);
+}
+

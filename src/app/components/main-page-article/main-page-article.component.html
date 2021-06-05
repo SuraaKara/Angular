@@ -1,0 +1,13 @@
+<div class="article">
+  <div class="gallery-image">
+    <div *ngFor="let subImages of subImage" class="img-box">
+      <img src="{{subImages.image}}" alt=""/>
+      <div class="transparent-box">
+        <div class="caption">
+          <p>{{subImages.title}}</p>
+          <p class="opacity-low">{{subImages.content}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="page">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <div *ngIf="dataLoaded==false" class=" text-center text-dark" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="btn"> <button type="button "
+                    class="btn btn-outline-success">H&#160;ı&#160;z&#160;l&#160;ı&#160;&#160;
+                    S&#160;i&#160;p&#160;a&#160;r&#160;i&#160;ş&#160;&#160; İ&#160;ç&#160;i&#160;n&#160;&#160;
+                    T&#160;ı&#160;k&#160;l&#160;a&#160;y&#160;ı&#160;n&#160;..</button></div>
+            <div class="row">
+                <div *ngFor="let product of products" class="col-md-4">
+                    <div *ngIf="dataLoaded==true" class="d-flex justify-content-center  mt-5 ">
+                        <div class="card">
+                            <div class="product-img">
+                                <img src="{{product.image}}" alt="">
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="title">
+                                    <h3>{{product.name}}</h3>
+                                </div>
+
+                                <div class="product-options">
+                                    <div class="sizes">
+                                        <strong>Ürün Açıklaması</strong>
+                                        <span>{{product.description}}</span>
+                                    </div>
+                                    <div class="colors">
+                                        <strong>Colors</strong>
+                                        <span class="blue"></span>
+                                        <span class="red"></span>
+                                        <span class="white"></span>
+                                        <span class="green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

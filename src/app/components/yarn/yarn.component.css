@@ -1,0 +1,149 @@
+.card{
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+   
+}
+h1 {
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+  }
+  
+  /* Animation */
+  h1 {
+    animation: animated-text 20s steps(33,end) 1s 1 normal both;  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 55%;}
+  }
+
+.komp{
+    margin-top: 0%;
+}
+.btn{
+    
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.card .face{
+    width: 380px;
+    height: 250px;
+    transition: 0.5s;
+}
+.card .face.face1{
+    position: relative;
+    background: rgb(39, 109, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.card:hover .face.face1{
+    background: #047c22;
+    transform: translateY(0);
+}
+
+.card .face.face1 .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.card .face.face1 .content img{
+    max-width: 400px;
+}
+
+.card .face.face1 .content h3{
+    margin-top: 0px 5 5;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.card .face.face2 .content p{
+    margin-top: -20px;
+    padding: 0;
+}
+
+.card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(100, 98, 98);
+    padding: 5px;
+    border: 1px solid rgb(133, 127, 127);
+}
+
+.card .face.face2 .content a:hover{
+    
+    color: rgb(161, 161, 161);
+}
+
+
+.yandan {
+    line-height: 1.2;
+    text-align: left;
+    animation-name: paragraph;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes paragraph {
+    0% {transform: translateX(-1000px)}
+  }
+  .sagdan {
+    line-height: 1.2;
+    text-align: left;
+    animation-name: paragraph2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes paragraph2 {
+    0% {transform: translateX(+1000px)}
+  }
+
+  .ustten {
+    line-height: 1.2;
+    text-align: left;
+    animation-name: paragraph3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes paragraph3 {
+    0% {transform: translateY(+1000px)}
+  }

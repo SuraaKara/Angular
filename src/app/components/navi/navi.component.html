@@ -1,0 +1,58 @@
+<nav class="navbar  navbar-expand-lg navbar-light bg-light ">
+  <div class="container-fluid">
+    <div class="col-md-1 text-center">
+      <div class="stage">
+        <div class="wrapper">
+          <div class="slash"></div>
+          <div class="sides">
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+          </div>
+          <div class="text">
+            <div class="text--backing">LOOPUS</div>
+            <div class="text--left">
+              <div class="inner">LOOPUS</div>
+            </div>
+            <div class="text--right">
+              <div class="inner">LOOPUS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 ">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav neons">
+          <li class="nav-item">
+            <a class="nav-link text-dark " routerLink="/mainPage">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark " routerLink="/aboutPage">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark " routerLink="/yarnPage">Kumaş</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-dark dropdown-toggle"  routerLink="/productPage" id="navbarDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Modeller
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li (click)="setCurrentCategory(category)"  *ngFor="let category of categories"><a class="dropdown-item" href="#">{{category.name}}</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class=" col-md-2">
+      <app-social-media></app-social-media>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>

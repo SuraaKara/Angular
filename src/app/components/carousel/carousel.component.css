@@ -1,0 +1,11 @@
+body#MainPage {
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+}
+.ana {
+  height: 700px;
+  width: 1537px;
+}

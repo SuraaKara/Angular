@@ -1,0 +1,17 @@
+.contact {
+    background: linear-gradient(rgb(255, 255, 255), rgb(207, 207, 207),rgb(179, 179, 179));
+ 
+  border-top: 0px solid #000000;
+  border-radius: 20px;
+  padding: 70px 0 0px 0;
+  color: rgb(0, 0, 0);
+}
+.contact h2 {
+  font: 300 30px "Raleway", sans-serif;
+}
+.contact .contactform input {
+  color: #ffffff;
+  font: 300 16px "Raleway", sans-serif;
+  padding: 12px 18px;
+  border-radius: 8px;
+}

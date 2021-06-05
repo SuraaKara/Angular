@@ -1,0 +1,51 @@
+h1 {
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+  }
+  
+  /* Animation */
+  h1 {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 400ms steps(29,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 442px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0, 0, 0, 0.75);}
+    to{border-right-color: transparent;}
+  }
+  
+  h2 {
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+  }
+  
+  /* Animation */
+  h2 {
+    animation: animated-text1 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 400ms steps(29,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text1{
+    from{width: 0;}
+    to{width: 208px;}
+  }
+  

@@ -1,0 +1,29 @@
+<div id="form-wrapper" class="mt-5">
+    <div class="container">
+        <div class="card card-body ">
+            <div class="row">
+                <div class="col-md-6" class="form-signin">
+                    <div class="form-login text-center">
+                        <h3> Login Page</h3>
+                        <div class="card border-success rounded-0 mt-3"></div>
+                        <br>
+                        <div class="row justify-content-center">
+                            <form [formGroup]="form" *ngIf="!loggedIn()" #loginForm="ngForm" class="form-inline my-2 my-lg-0 col-md-6"
+                                >
+                                <input class="form-control mr-sm-2" type="text" formControlName="username" name="username"
+                                    placeholder="Kullaniciadi" required />
+                                <br>
+                                <input class="form-control mr-sm-2" type="password" formControlName="password" name="password" placeholder="Sifre"
+                                    required />
+                                <br>
+                                <button [disabled]="!loginForm.valid" (click)="login()" class="btn btn-success my-2 my-sm-0"
+                                    type="submit">Login</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

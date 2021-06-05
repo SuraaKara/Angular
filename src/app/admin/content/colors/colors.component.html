@@ -1,0 +1,42 @@
+<div class="row">
+    <app-header></app-header>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-md-10 mt-5">
+        <div class="col-md-6">
+            <p>
+                <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                 Renk Ekle
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    
+                        <div class="mbottom">
+                            <h2>Renk Ekle </h2>
+                            <div class="card border-success rounded-0"></div>
+                           <br>
+                        </div>
+                        <form [formGroup]="colorAddForm">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" id="color"
+                                         formControlName="name" 
+                                         class="form-control input-lg" placeholder="Renk *" required=""
+                                           value="">
+                                    </div>          
+                                </div><br>
+                                
+                            </div> 
+                            <button type="submit" class="btn   btn-success" (click)="add()">Ekle</button>
+                        </form>
+                   
+                </div>
+              </div>
+        </div>       
+    </div>
+</div>

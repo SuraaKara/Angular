@@ -1,0 +1,38 @@
+<div class="row">
+    <app-header></app-header>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-md-10 mt-5">
+        <div class="col-md-6">
+            <p>
+                <button class="btn btn-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Kategori Ekle
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                   
+                        <div class="mbottom">
+                            <h2>Kategori Ekle </h2>
+                            <div class="card border-success rounded-0"></div>
+                            <br>
+                        </div>
+                        <form [formGroup]="categoryAddForm">
+                            <div class="mb-3">
+                                <div class="form-group">
+                                    <input type="text" id="name" formControlName="name"
+                                        class="form-control" placeholder="Kategori **" />
+                                </div>
+                            </div>
+                        </form>
+                        <button class="btn btn-success" (click)="add()">Ekle</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
